@@ -19,7 +19,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '18'  # Use whatever version you're developing with
+          node-version: '22.14.0'  # Use whatever version you're developing with
           cache: 'npm'
 
       - name: Install dependencies
@@ -34,7 +34,7 @@ jobs:
           publish-dir: './dist'  # Default Vite output directory
           production-branch: main
           github-token: ${{ secrets.GITHUB_TOKEN }}
-          deploy-message: "Deploy from GitHub Actions"
+          deploy-message: "Deploy from GitHub Actions (${{ github.ref_name }} branch)"
           enable-pull-request-comment: true
           enable-commit-comment: true
           overwrites-pull-request-comment: true
