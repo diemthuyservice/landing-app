@@ -40,14 +40,78 @@
     gtag('js', new Date())
     gtag('config', 'G-ERDPG03WFD')
   </script>
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-  <script src="https://kit.fontawesome.com/434d969c8a.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Nunito', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet" />
+  <script src="//unpkg.com/alpinejs" defer></script>
+  <style type="text/css">
+      :root {
+          /* Primary Colors */
+          --color-background: #f7f9fa;
+          --color-text-dark: #2e2e2e;
+          --color-primary-blue: #045fa2;
+          --color-hero-background: linear-gradient(to right, #138f94, #0460a3);
+          --color-white: #fff;
+          --color-blue-100: #e6f2ff; /* Added a suggested blue-100 variant */
+      }
+
+      body {
+          background: var(--color-background);
+          color: var(--color-text-dark);
+      }
+
+      a {
+          color: var(--color-primary-blue);
+      }
+
+      .hero {
+          background: var(--color-hero-background);
+          color: var(--color-white);
+      }
+
+      .hero a {
+          color: var(--color-white);
+      }
+
+      .hero h1, h2 {
+          color: var(--color-white);
+      }
+
+      .cta-button {
+          background: 	#0767a1;
+          color:  var(--color-white);
+          padding: 10px 20px;
+          border-radius: 5px;
+          text-decoration: none;
+          margin: 5px;
+      }
+
+      .cta-button:hover {
+          background: var(--color-blue-100);
+          color: var(--color-primary-blue);
+      }
+
+      h1, h2 {
+          color: var(--color-primary-blue);
+      }
+  </style>
 </head>
-<body>
+<body class="font-sans">
 <!--<div id="app"></div>-->
 <!--<script type="module" src="/src/main.ts"></script>-->
 <header>
-  <div class="container">
+  <div>
     <nav class="relative">
       <div class="flex items-center justify-between p-4">
         <!-- Logo -->
@@ -58,7 +122,7 @@
 
         <!-- Mobile Menu Toggle -->
         <button id="mobile-menu-toggle" class="block md:hidden focus:outline-none">
-          <i data-lucide="menu" class="w-6 h-6 text-blue-800">A</i>
+          <i class="fa-regular fa-bars fa-xl"></i>
         </button>
         <!-- Main Navigation -->
         <ul id="nav-menu" class="
@@ -77,19 +141,22 @@
     </nav>
   </div>
 </header>
-<section class="hero bg-blue-500 text-white p-5">
-  <div class="container">
-    <h1 class="text-center">
-      Đối Tác Cung Cấp Dịch Vụ Thuê Ngoài Hành Chính Nhân Sự, Tuyển Dụng Hàng Đầu <br/>
-      <a href="https://work-well.net/" class="cta-button">Liên Hệ Chúng Tôi</a>
+<section class="hero p-6">
+  <div class="max-w-4xl mx-auto flex flex-col items-center justify-center text-center">
+    <h1 class="flex flex-col items-center justify-center">
+      <span class="inline-block text-4xl mb-5 sm:mb-10">Đối Tác Cung Cấp Dịch Vụ Uy Tín Hàng Đầu</span>
+      <a href="/"
+         class="cta-button inline-block mt-4 px-6 py-3 text-2xl rounded-lg transition-colors">
+        Liên Hệ Chúng Tôi
+      </a>
     </h1>
   </div>
 </section>
 <main>
   <div class="container"></div>
-  <section id="cta">
-    <h2 class="text-center">
-      Chúng Tôi Luôn Sẵn Sàng <br/>
+  <section id="cta" class="m-10">
+    <h2 class="text-center flex flex-col items-center justify-center">
+      <span>Chúng Tôi Luôn Sẵn Sàng</span> <br />
       <a href="/contact" class="cta-button"> Hãy Liên Hệ Ngay Hôm Nay </a>
     </h2>
   </section>
