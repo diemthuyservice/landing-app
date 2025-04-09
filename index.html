@@ -41,42 +41,57 @@
     gtag('config', 'G-ERDPG03WFD')
   </script>
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <script src="https://kit.fontawesome.com/434d969c8a.js" crossorigin="anonymous"></script>
 </head>
 <body>
 <!--<div id="app"></div>-->
 <!--<script type="module" src="/src/main.ts"></script>-->
 <header>
   <div class="container">
-    <nav>
-      <!-- Logo -->
-      <a href="/" class="logo">
-        <img src="/IMG_0760.JPG" alt="Work Well - Lớn Mạnh Cùng Nhau" width="100" height="100">
-      </a>
+    <nav class="relative">
+      <div class="flex items-center justify-between p-4">
+        <!-- Logo -->
+        <a href="/" class="logo">
+          <img src="/IMG_0760.JPG" alt="Work Well - Lớn Mạnh Cùng Nhau"
+               class="w-24 h-24 md:w-32 md:h-32 object-cover rounded-full">
+        </a>
 
-      <!-- Main Navigation -->
-      <ul>
-        <li><a href="/" aria-current="page">Trang chủ</a></li>
-        <li><a href="/about">Giới thiệu</a></li>
-        <li><a href="/services">Dịch vụ</a></li>
-        <li><a href="/contact">Liên hệ</a></li>
-      </ul>
+        <!-- Mobile Menu Toggle -->
+        <button id="mobile-menu-toggle" class="block md:hidden focus:outline-none">
+          <i data-lucide="menu" class="w-6 h-6 text-blue-800">A</i>
+        </button>
+        <!-- Main Navigation -->
+        <ul id="nav-menu" class="
+                hidden md:flex
+                fixed inset-0 md:static
+                bg-white md:bg-transparent
+                flex-col md:flex-row
+                items-center justify-center md:justify-start
+                space-y-6 md:space-y-0 md:space-x-6 font-bold text-2xl">
+          <li><a href="/" aria-current="page"><i class="fa-regular fa-house fa-xl"></i> Trang chủ</a></li>
+          <li><a href="/about"><i class="fa-regular fa-building fa-xl"></i> Giới thiệu</a></li>
+          <li><a href="/services"><i class="fa-regular fa-clipboard-list-check fa-xl"></i> Dịch vụ</a></li>
+          <li><a href="/contact"><i class="fa-regular fa-phone-volume fa-xl"></i> Liên hệ</a></li>
+        </ul>
+      </div>
     </nav>
   </div>
 </header>
-<section class="hero bg-blue-500 text-white p-5 rounded-lg">
+<section class="hero bg-blue-500 text-white p-5">
   <div class="container">
-    <h1>Đối Tác Cung Cấp Dịch Vụ Thuê Ngoài Hành Chính Nhân Sự, Tuyển Dụng Hàng Đầu</h1>
-    <a href="https://work-well.net/" class="cta-button">Liên Hệ Chúng Tôi</a>
-
-    <!-- Optional Hero Image -->
-    <!--    <img src="/images/hero-image.jpg" alt="Descriptive text about the hero image" width="1200" height="600">-->
+    <h1 class="text-center">
+      Đối Tác Cung Cấp Dịch Vụ Thuê Ngoài Hành Chính Nhân Sự, Tuyển Dụng Hàng Đầu <br/>
+      <a href="https://work-well.net/" class="cta-button">Liên Hệ Chúng Tôi</a>
+    </h1>
   </div>
 </section>
 <main>
   <div class="container"></div>
   <section id="cta">
-    <h2> Chúng Tôi Luôn Sẵn Sàng </h2>
-    <a href="/contact" class="cta-button"> Hãy Liên Hệ Ngay Hôm Nay </a>
+    <h2 class="text-center">
+      Chúng Tôi Luôn Sẵn Sàng <br/>
+      <a href="/contact" class="cta-button"> Hãy Liên Hệ Ngay Hôm Nay </a>
+    </h2>
   </section>
 </main>
 </body>
