@@ -47,7 +47,7 @@
       theme: {
         extend: {
           fontFamily: {
-            sans: ['Nunito', 'sans-serif'],
+            sans: ['Nunito', 'sans-serif']
           }
         }
       }
@@ -89,8 +89,8 @@
       }
 
       .cta-button {
-          background: 	#0767a1;
-          color:  var(--color-white);
+          background: #0767a1;
+          color: var(--color-white);
           padding: 10px 20px;
           border-radius: 5px;
           text-decoration: none;
@@ -102,7 +102,7 @@
           color: var(--color-primary-blue);
       }
 
-      h1, h2 {
+      h1, h2, h3, h4, h5, h6 {
           color: var(--color-primary-blue);
       }
 
@@ -114,7 +114,11 @@
           color: var(--color-primary-blue);
       }
 
-      nav#top-nav li a{
+      nav#top-nav li a {
+          color: var(--color-primary-blue);
+      }
+
+      #mobile-menu-toggle {
           color: var(--color-primary-blue);
       }
   </style>
@@ -166,7 +170,101 @@
   </div>
 </section>
 <main>
-  <div class="container"></div>
+  <div class="max-w-4xl mx-auto mt-20">
+    <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold mb-8 text-center">Dịch Vụ Của Chúng Tôi</h1>
+    <!-- Service Carousel Container -->
+    <div class="border md:hidden bg-white rounded-lg overflow-hidden shadow-lg relative"
+         id="service-carousel-mobile">
+      <!-- Service Content - All content is in the HTML for SEO -->
+      <!-- Service 1 -->
+      <div class="service-slide active p-8 flex flex-col items-center text-center" id="service-1" data-color="blue"
+           data-index="0">
+        <div class="text-6xl mb-6 w-24 h-24 rounded-full flex items-center justify-center text-white bg-blue-500">
+          <i class="fa-regular fa-users-rays"></i>
+        </div>
+        <h3 class="text-2xl font-bold mb-3">Tuyển Dụng & Headhunting</h3>
+        <p class="mb-6 max-w-md">
+          Hỗ trợ tìm kiếm và tuyển dụng nhân sự chất lượng cao
+        </p>
+        <a href="/" class="bg-blue-500 text-white px-6 py-2 rounded-full hover:bg-blue-600 transition-colors">
+          Bổ Sung Nguồn Lực Ngay
+        </a>
+      </div>
+      <!-- Service 2 -->
+      <div class="service-slide p-8 flex flex-col items-center text-center" id="service-2" data-color="purple"
+           data-index="1">
+        <div class="text-6xl mb-6 w-24 h-24 rounded-full flex items-center justify-center text-white bg-purple-500">
+          <span><i class="fa-regular fa-money-check-dollar-pen"></i></span>
+        </div>
+        <h3 class="text-2xl font-bold mb-3">Dịch Vụ Tính Lương và Quản Lý Phúc Lợi</h3>
+        <p class="mb-6 max-w-md">
+          Tư vấn, thiết kế và hướng dẫn quản lý chế độ phúc lợi nhân viên
+        </p>
+        <a href="/"
+           class="bg-purple-500 text-white px-6 py-2 rounded-full hover:bg-purple-600 transition-colors">
+          Tìm Hiểu Ngay Hôm Nay
+        </a>
+      </div>
+      <!-- Service 3 -->
+      <div class="service-slide p-8 flex flex-col items-center text-center" id="service-3" data-color="pink"
+           data-index="2">
+        <div class="text-6xl mb-6 w-24 h-24 rounded-full flex items-center justify-center text-white bg-pink-500">
+          <span><i class="fa-regular fa-folder-user"></i></span>
+        </div>
+        <h3 class="text-2xl font-bold mb-3">Quản Lý Hồ Sơ Nhân Sự</h3>
+        <p class="mb-6 max-w-md">
+          Hỗ trợ quản lý hồ sơ nhân sự, hợp đồng lao động và các tài liệu liên quan
+        </p>
+        <a href="/" class="bg-pink-500 text-white px-6 py-2 rounded-full hover:bg-pink-600 transition-colors">
+          Cùng Xây Dựng Hệ Thống
+        </a>
+      </div>
+      <!-- Service 4 -->
+      <div class="service-slide p-8 flex flex-col items-center text-center" id="service-4" data-color="green"
+           data-index="3">
+        <div class="text-6xl mb-6 w-24 h-24 rounded-full flex items-center justify-center text-white bg-green-500">
+          <span><i class="fa-regular fa-file-certificate"></i></span>
+        </div>
+        <h3 class="text-2xl font-bold mb-3">Đào Tạo Phát Triển Nhân Sự</h3>
+        <p class="text-gray-600 mb-6 max-w-md">
+          Đào tạo kỹ năng và huấn luyện phát triển chuyên môn ngành nhân sự bài bản theo nhu cầu của doanh nghiệp
+        </p>
+        <a href="/" class="bg-green-500 text-white px-6 py-2 rounded-full hover:bg-green-600 transition-colors">
+          Liên Hệ Ngay Để Phát Triển
+        </a>
+      </div>
+      <!-- Service 5 -->
+      <div class="service-slide p-8 flex flex-col items-center text-center" id="service-5" data-color="yellow"
+           data-index="4">
+        <div class="text-6xl mb-6 w-24 h-24 rounded-full flex items-center justify-center text-white bg-yellow-500">
+          <span><i class="fa-regular fa-chart-mixed"></i></span>
+        </div>
+        <h3 class="text-2xl font-bold mb-3">Tư Vấn Chiến Lược</h3>
+        <p class="text-gray-600 mb-6 max-w-md">
+          Tư vấn xây dựng hệ thống quản trị nhân sự chuyên nghiệp, hiệu quả và bền vững
+        </p>
+        <a href="/"
+           class="bg-yellow-500 text-white px-6 py-2 rounded-full hover:bg-yellow-600 transition-colors">
+          Xây Dựng Chiến Lược và Văn Hoá
+        </a>
+      </div>
+      <!-- Service 6 -->
+      <div class="service-slide p-8 flex flex-col items-center text-center" id="service-6" data-color="red"
+           data-index="5">
+        <div class="text-6xl mb-6 w-24 h-24 rounded-full flex items-center justify-center text-white bg-red-500">
+          <span><i class="fa-regular fa-scale-balanced"></i></span>
+        </div>
+        <h3 class="text-2xl font-bold mb-3">Tư Vấn Luật Lao Động</h3>
+        <p class="text-gray-600 mb-6 max-w-md">
+          Tư vấn và hỗ trợ giải quyết các vấn đề pháp lý liên quan đến luật Lao Động và Bảo Hiểm Xã Hội
+        </p>
+        <a href="/"
+           class="bg-red-500 text-white px-6 py-2 rounded-full hover:bg-red-600 transition-colors">
+          Chúng Tôi Sẵn Sàng Hỗ Trợ
+        </a>
+      </div>
+    </div>
+  </div>
   <section id="cta" class="m-10">
     <h2 class="text-center flex flex-col items-center justify-center">
       <span>Chúng Tôi Luôn Sẵn Sàng</span> <br />
