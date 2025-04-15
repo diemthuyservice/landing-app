@@ -123,7 +123,7 @@
       }
   </style>
 </head>
-<body class="font-sans">
+<body class="font-sans" x-data="navigation">
 <!--<div id="app"></div>-->
 <!--<script type="module" src="/src/main.ts"></script>-->
 <header>
@@ -147,15 +147,15 @@
                 flex-col md:flex-row
                 items-center justify-center md:justify-start
                 space-y-6 md:space-y-0 md:space-x-6 font-bold text-2xl">
-        <li><a href="/" aria-current="page"><i class="fa-regular fa-house fa-xl" rel="home"></i> Trang Chủ</a></li>
-        <li><a href="/"><i class="fa-regular fa-building fa-xl"></i> Giới Thiệu</a></li>
-        <li><a href="/"><i class="fa-regular fa-clipboard-list-check fa-xl"></i> Dịch Vụ</a></li>
-        <li><a href="/"><i class="fa-regular fa-phone-volume fa-xl"></i> Liên Hệ</a></li>
+        <li><a href="#" aria-current="page" @click.prevent="changeTab('home')"><i class="fa-regular fa-house fa-xl" rel="home"></i> Trang Chủ</a></li>
+        <li><a href="#" @click.prevent="changeTab('about')"><i class="fa-regular fa-building fa-xl"></i> Giới Thiệu</a></li>
+        <li><a href="#"><i class="fa-regular fa-clipboard-list-check fa-xl"></i> Dịch Vụ</a></li>
+        <li><a href="#"><i class="fa-regular fa-phone-volume fa-xl"></i> Liên Hệ</a></li>
       </ul>
     </div>
   </nav>
 </header>
-<section class="hero p-6">
+<section class="hero p-6" x-show="currentTab === 'home'">
   <div class="max-w-4xl mx-auto flex flex-col items-center justify-center text-center">
     <h1 class="flex flex-col items-center justify-center">
       <span class="inline-block font-black text-4xl mb-5 sm:mb-10 sm:text-6xl">Cung Cấp Giải Pháp Nhân Sự</span>
@@ -169,7 +169,7 @@
 </section>
 <main>
   <!-- Mobile layout -->
-  <div class="max-w-4xl mx-auto mt-20">
+  <div class="max-w-4xl mx-auto mt-20" x-show="currentTab === 'home'">
     <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold mb-8 text-center">Dịch Vụ Của Chúng Tôi</h1>
     <!-- Service Carousel Container -->
     <div class="border md:hidden bg-white rounded-lg overflow-hidden shadow-lg relative"
@@ -300,7 +300,7 @@
   </div>
   <!-- Services with alternating layout -->
   <!-- Desktop layout -->
-  <div class="space-y-24 hidden md:block">
+  <div class="space-y-24 hidden md:block" x-show="currentTab === 'home'">
     <!-- First Service Section - Left image, right content -->
     <section class="service-container max-w-6xl mx-auto my-12 overflow-hidden bg-white rounded-lg shadow-lg">
       <div class="flex flex-col md:flex-row items-stretch">
@@ -344,14 +344,14 @@
       </div>
     </section>
   </div>
-  <section id="cta" class="my-10 md:my-2">
+  <section id="cta" class="my-10 md:my-2" x-show="currentTab === 'home'">
     <h2 class="text-center flex flex-col md:flex-row items-center justify-center">
       <span class="md:mx-4">Chúng Tôi Luôn Sẵn Sàng</span> <br />
       <a href="/contact" class="cta-button"> Hãy Liên Hệ Ngay Hôm Nay </a>
     </h2>
   </section>
   <!-- Services with alternating layout -->
-  <div class="space-y-24 hidden md:block">
+  <div class="space-y-24 hidden md:block" x-show="currentTab === 'home'">
     <section class="service-container max-w-6xl mx-auto my-6 overflow-hidden bg-white rounded-lg shadow-lg">
       <div class="flex flex-col md:flex-row items-stretch">
         <!-- Service Content Section -->
@@ -402,13 +402,13 @@
       </div>
     </section>
   </div>
-  <section id="cta-1" class="my-10 md:my-2 hidden md:block">
+  <section id="cta-1" class="my-10 md:my-2 hidden md:block" x-show="currentTab === 'home'">
     <h2 class="text-center flex flex-col md:flex-row items-center justify-center">
       <span class="md:mx-4">Chúng Tôi Luôn Sẵn Sàng</span> <br />
       <a href="/contact" class="cta-button"> Hãy Liên Hệ Ngay Hôm Nay </a>
     </h2>
   </section>
-  <div class="space-y-24 hidden md:block">
+  <div class="space-y-24 hidden md:block" x-show="currentTab === 'home'">
     <!-- First Service Section - Left image, right content -->
     <section class="service-container max-w-6xl mx-auto my-12 overflow-hidden bg-white rounded-lg shadow-lg">
       <div class="flex flex-col md:flex-row items-stretch">
@@ -491,6 +491,23 @@
       </section>
     </div>
   </div>
+  <!-- Content of About section -->
+  <div class="mx-auto" x-show="currentTab === 'about'">
+    <section class="hero p-6">
+      <div class="max-w-4xl mx-auto flex flex-col items-center justify-center text-center">
+        <h1 class="flex flex-col items-center justify-center">
+          <span class="inline-block font-black text-4xl mb-5 sm:mb-10 sm:text-6xl">Giới Thiệu Work Well</span>
+        </h1>
+      </div>
+    </section>
+    <div class="font-bold text-3xl mx-auto max-w-4xl my-10">
+      <p class="mb-5">Work Well là đối tác hàng đầu chuyên cung cấp các giải pháp nhân sự dành cho doanh nghiệp vừa và nhỏ,
+        kể cả hộ kinh doanh cá thể. </p>
+      <p class="mb-5">Chúng tôi tập trung vào hai mảng cốt lõi: Tuyển Dụng và Tư Vấn Chiến Lược Nhân Sự.</p>
+      <p class="mb-5">Với phương châm 'Grow Strong – Cùng Nhau Lớn Mạnh', Work Well đồng hành cùng doanh nghiệp trong việc xây dựng
+      đội ngũ phù hợp và phát triển tổ chức bền vững.</p>
+    </div>
+  </div>
 </main>
 <footer class="bg-gray-100 py-8">
   <div class="container mx-auto px-4">
@@ -527,5 +544,35 @@
     </nav>
   </div>
 </footer>
+<script>
+  // We need to modify the Alpine.js initialization to handle URL hash
+  document.addEventListener('alpine:init', () => {
+    Alpine.data('navigation', () => ({
+      currentTab: window.location.hash ? window.location.hash.substring(1) : 'home',
+
+      init() {
+        // Set initial tab based on URL hash
+        if (window.location.hash) {
+          this.currentTab = window.location.hash.substring(1);
+        }
+
+        // Add event listener for hash changes
+        window.addEventListener('hashchange', () => {
+          if (window.location.hash) {
+            this.currentTab = window.location.hash.substring(1);
+          } else {
+            this.currentTab = 'home';
+          }
+        });
+      },
+
+      // Method to change tab and update URL
+      changeTab(tab) {
+        this.currentTab = tab;
+        window.location.hash = tab;
+      }
+    }));
+  });
+</script>
 </body>
 </html>
