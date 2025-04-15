@@ -127,53 +127,51 @@
 <!--<div id="app"></div>-->
 <!--<script type="module" src="/src/main.ts"></script>-->
 <header>
-  <div>
-    <nav class="relative" id="top-nav">
-      <div class="flex items-center justify-between p-4">
-        <!-- Logo -->
-        <a href="/" class="logo">
-          <img src="/IMG_0760.JPG" alt="Work Well - Lớn Mạnh Cùng Nhau"
-               class="w-24 h-24 md:w-32 md:h-32 object-cover rounded-full">
-        </a>
+  <nav class="relative" id="top-nav">
+    <div class="flex items-center justify-between p-4">
+      <!-- Logo -->
+      <a href="/" class="logo">
+        <img src="/IMG_0760.JPG" alt="Work Well - Lớn Mạnh Cùng Nhau"
+             class="w-24 h-24 md:w-32 md:h-32 object-cover rounded-full">
+      </a>
 
-        <!-- Mobile Menu Toggle -->
-        <button id="mobile-menu-toggle" class="block md:hidden focus:outline-none">
-          <i class="fa-regular fa-bars fa-xl"></i>
-        </button>
-        <!-- Main Navigation -->
-        <ul id="nav-menu" class="
+      <!-- Mobile Menu Toggle -->
+      <button id="mobile-menu-toggle" class="block md:hidden focus:outline-none">
+        <i class="fa-regular fa-bars fa-xl"></i>
+      </button>
+      <!-- Main Navigation -->
+      <ul id="nav-menu" class="
                 hidden md:flex
                 fixed inset-0 md:static
                 bg-white md:bg-transparent
                 flex-col md:flex-row
                 items-center justify-center md:justify-start
                 space-y-6 md:space-y-0 md:space-x-6 font-bold text-2xl">
-          <li><a href="/" aria-current="page"><i class="fa-regular fa-house fa-xl" rel="home"></i> Trang Chủ</a></li>
-          <li><a href="/"><i class="fa-regular fa-building fa-xl"></i> Giới Thiệu</a></li>
-          <li><a href="/"><i class="fa-regular fa-clipboard-list-check fa-xl"></i> Dịch Vụ</a></li>
-          <li><a href="/"><i class="fa-regular fa-phone-volume fa-xl"></i> Liên Hệ</a></li>
-        </ul>
-      </div>
-    </nav>
-  </div>
+        <li><a href="/" aria-current="page"><i class="fa-regular fa-house fa-xl" rel="home"></i> Trang Chủ</a></li>
+        <li><a href="/"><i class="fa-regular fa-building fa-xl"></i> Giới Thiệu</a></li>
+        <li><a href="/"><i class="fa-regular fa-clipboard-list-check fa-xl"></i> Dịch Vụ</a></li>
+        <li><a href="/"><i class="fa-regular fa-phone-volume fa-xl"></i> Liên Hệ</a></li>
+      </ul>
+    </div>
+  </nav>
 </header>
 <section class="hero p-6">
   <div class="max-w-4xl mx-auto flex flex-col items-center justify-center text-center">
     <h1 class="flex flex-col items-center justify-center">
-      <span class="inline-block text-4xl mb-5 sm:mb-10 sm:text-6xl">Cung Cấp Giải Pháp Nhân Sự</span>
-      <span class="inline-block text-4xl mb-5 sm:mb-10 sm:text-6xl">Toàn Diện Cho Doanh Nghiệp</span>
+      <span class="inline-block font-black text-4xl mb-5 sm:mb-10 sm:text-6xl">Cung Cấp Giải Pháp Nhân Sự</span>
+      <span class="inline-block font-black text-4xl mb-5 sm:mb-10 sm:text-6xl">Toàn Diện Cho Doanh Nghiệp</span>
       <a href="/" rel="home"
-         class="cta-button inline-block mt-4 px-6 py-3 text-xl rounded-lg transition-colors">
+         class="cta-button inline-block mt-4 px-6 py-3 text-3xl rounded-lg transition-colors font-bold">
         Tìm Hiểu Ngay
       </a>
     </h1>
   </div>
 </section>
 <main>
+  <!-- Mobile layout -->
   <div class="max-w-4xl mx-auto mt-20">
     <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold mb-8 text-center">Dịch Vụ Của Chúng Tôi</h1>
     <!-- Service Carousel Container -->
-    <!-- Mobile layout -->
     <div class="border md:hidden bg-white rounded-lg overflow-hidden shadow-lg relative"
          id="service-carousel-mobile">
       <!-- Service Content - All content is in the HTML for SEO -->
@@ -183,11 +181,11 @@
         <div class="text-6xl mb-6 w-24 h-24 rounded-full flex items-center justify-center text-white bg-blue-500">
           <i class="fa-regular fa-users-rays"></i>
         </div>
-        <h3 class="text-2xl font-bold mb-3">Tuyển Dụng & Headhunting</h3>
-        <p class="mb-6 max-w-md">
+        <h3 class="text-3xl font-bold mb-3">Tuyển Dụng & Headhunting</h3>
+        <p class="mb-6 max-w-md font-bold text-xl">
           Hỗ trợ tìm kiếm và tuyển dụng nhân sự chất lượng cao
         </p>
-        <a href="/" class="bg-blue-500 text-white px-6 py-2 rounded-full hover:bg-blue-600 transition-colors">
+        <a href="/" class="bg-blue-500 text-white px-6 py-2 rounded-full hover:bg-blue-600 transition-colors font-bold">
           Bổ Sung Nguồn Lực Ngay
         </a>
       </div>
@@ -197,12 +195,12 @@
         <div class="text-6xl mb-6 w-24 h-24 rounded-full flex items-center justify-center text-white bg-purple-500">
           <span><i class="fa-regular fa-money-check-dollar-pen"></i></span>
         </div>
-        <h3 class="text-2xl font-bold mb-3">Dịch Vụ Tính Lương và Quản Lý Phúc Lợi</h3>
-        <p class="mb-6 max-w-md">
+        <h3 class="text-3xl font-bold mb-3">Dịch Vụ Tính Lương và Quản Lý Phúc Lợi</h3>
+        <p class="mb-6 max-w-md text-xl font-bold">
           Tư vấn, thiết kế và hướng dẫn quản lý chế độ phúc lợi nhân viên
         </p>
         <a href="/"
-           class="bg-purple-500 text-white px-6 py-2 rounded-full hover:bg-purple-600 transition-colors">
+           class="bg-purple-500 text-white px-6 py-2 rounded-full hover:bg-purple-600 transition-colors font-bold">
           Tìm Hiểu Ngay Hôm Nay
         </a>
       </div>
@@ -212,11 +210,11 @@
         <div class="text-6xl mb-6 w-24 h-24 rounded-full flex items-center justify-center text-white bg-pink-500">
           <span><i class="fa-regular fa-folder-user"></i></span>
         </div>
-        <h3 class="text-2xl font-bold mb-3">Quản Lý Hồ Sơ Nhân Sự</h3>
-        <p class="mb-6 max-w-md">
+        <h3 class="text-3xl font-bold mb-3">Quản Lý Hồ Sơ Nhân Sự</h3>
+        <p class="mb-6 max-w-md text-xl font-bold">
           Hỗ trợ quản lý hồ sơ nhân sự, hợp đồng lao động và các tài liệu liên quan
         </p>
-        <a href="/" class="bg-pink-500 text-white px-6 py-2 rounded-full hover:bg-pink-600 transition-colors">
+        <a href="/" class="bg-pink-500 text-white px-6 py-2 rounded-full hover:bg-pink-600 transition-colors font-bold">
           Cùng Xây Dựng Hệ Thống
         </a>
       </div>
@@ -226,11 +224,11 @@
         <div class="text-6xl mb-6 w-24 h-24 rounded-full flex items-center justify-center text-white bg-green-500">
           <span><i class="fa-regular fa-file-certificate"></i></span>
         </div>
-        <h3 class="text-2xl font-bold mb-3">Đào Tạo Phát Triển Nhân Sự</h3>
-        <p class="text-gray-600 mb-6 max-w-md">
+        <h3 class="text-3xl font-bold mb-3">Đào Tạo Phát Triển Nhân Sự</h3>
+        <p class="mb-6 max-w-md font-bold text-xl">
           Đào tạo kỹ năng và huấn luyện phát triển chuyên môn ngành nhân sự bài bản theo nhu cầu của doanh nghiệp
         </p>
-        <a href="/" class="bg-green-500 text-white px-6 py-2 rounded-full hover:bg-green-600 transition-colors">
+        <a href="/" class="bg-green-500 text-white px-6 py-2 rounded-full hover:bg-green-600 transition-colors font-bold">
           Liên Hệ Ngay Để Phát Triển
         </a>
       </div>
@@ -240,12 +238,12 @@
         <div class="text-6xl mb-6 w-24 h-24 rounded-full flex items-center justify-center text-white bg-yellow-500">
           <span><i class="fa-regular fa-chart-mixed"></i></span>
         </div>
-        <h3 class="text-2xl font-bold mb-3">Tư Vấn Chiến Lược</h3>
-        <p class="text-gray-600 mb-6 max-w-md">
+        <h3 class="text-3xl font-bold mb-3">Tư Vấn Chiến Lược</h3>
+        <p class="mb-6 max-w-md text-xl font-bold">
           Tư vấn xây dựng hệ thống quản trị nhân sự chuyên nghiệp, hiệu quả và bền vững
         </p>
         <a href="/"
-           class="bg-yellow-500 text-white px-6 py-2 rounded-full hover:bg-yellow-600 transition-colors">
+           class="bg-yellow-500 text-white px-6 py-2 rounded-full hover:bg-yellow-600 transition-colors font-bold">
           Xây Dựng Chiến Lược và Văn Hoá
         </a>
       </div>
@@ -255,12 +253,12 @@
         <div class="text-6xl mb-6 w-24 h-24 rounded-full flex items-center justify-center text-white bg-red-500">
           <span><i class="fa-regular fa-scale-balanced"></i></span>
         </div>
-        <h3 class="text-2xl font-bold mb-3">Tư Vấn Luật Lao Động</h3>
-        <p class="text-gray-600 mb-6 max-w-md">
+        <h3 class="text-3xl font-bold mb-3">Tư Vấn Luật Lao Động</h3>
+        <p class="text-2xl font-bold mb-6 max-w-md">
           Tư vấn và hỗ trợ giải quyết các vấn đề pháp lý liên quan đến luật Lao Động và Bảo Hiểm Xã Hội
         </p>
         <a href="/"
-           class="bg-red-500 text-white px-6 py-2 rounded-full hover:bg-red-600 transition-colors">
+           class="bg-red-500 text-white px-6 py-2 rounded-full hover:bg-red-600 transition-colors font-bold">
           Chúng Tôi Sẵn Sàng Hỗ Trợ
         </a>
       </div>
@@ -317,31 +315,27 @@
         <!-- Service Content Section - Center aligned text -->
         <div class="w-3/5 px-8 py-8 flex flex-col justify-center">
           <div class="max-w-lg mx-auto">
-            <h2 class="text-4xl font-bold mb-4 text-blue-600 text-center md:text-left">Dịch Vụ Tuyển dụng</h2>
-<!--            <p class="mb-6 leading-relaxed text-gray-700 text-center md:text-left text-2xl">-->
-<!--              Hỗ trợ tìm kiếm và tuyển dụng nhân sự chất lượng cao-->
-<!--            </p>-->
+            <h2 class="text-4xl font-black mb-4 text-blue-600 text-center md:text-left">
+              Dịch Vụ Tuyển Dụng
+            </h2>
             <ul class="mb-8 space-y-3 px-4">
               <li class="flex items-start">
-<!--                <svg class="h-6 w-6 text-blue-500 mr-3 flex-shrink-0" fill="none" viewBox="0 0 24 24"-->
-<!--                     stroke="currentColor">-->
-<!--                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />-->
-<!--                </svg>-->
                 <i class="fa-solid fa-circle-check fa-2x text-green-700"></i>
-                <span class="text-xl mx-4">Tuyển đúng người - vững tổ chức</span>
+                <span class="text-xl mx-4 font-bold">Tuyển đúng người - vững tổ chức</span>
               </li>
               <li class="flex items-start">
                 <i class="fa-solid fa-circle-check fa-2x text-green-700"></i>
-                <span class="text-xl mx-4">Tư vấn chiến lược nhân sự</span>
+                <span class="text-xl mx-4 font-bold">Tư vấn chiến lược nhân sự</span>
               </li>
               <li class="flex items-start">
                 <i class="fa-solid fa-circle-check fa-2x text-green-700"></i>
-                <span class="text-xl mx-4">Tư vấn Luật Lao Động, Luật BHXH</span>
+                <span class="text-xl mx-4 font-bold">Tư vấn Luật Lao Động, Luật BHXH</span>
               </li>
             </ul>
             <div class="text-center text-2xl">
               <a href="/"
-                 class="inline-block bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-full transition-colors">
+                 class="inline-block bg-blue-500 hover:bg-blue-600 text-white font-bold
+                 py-3 px-6 rounded-full transition-colors">
                 Bổ Sung Nguồn Lực Ngay
               </a>
             </div>
@@ -363,30 +357,30 @@
         <!-- Service Content Section -->
         <div class="w-3/5 px-8 py-8 flex flex-col justify-center">
           <div class="max-w-lg mx-auto">
-            <h2 class="text-4xl font-bold mb-4 text-blue-600">DV Tính Lương và Chi Trả Hộ</h2>
-            <p class="mb-6 leading-relaxed text-2xl">
-              Nhẹ gánh cho doanh nghiệp
+            <h2 class="text-4xl mb-4 text-blue-600 font-black">DV Tính Lương và Chi Trả Hộ</h2>
+            <p class="mb-6 leading-relaxed text-2xl font-bold">
+              Nhẹ Gánh Cho Doanh Nghiệp
             </p>
             <ul class="mb-8 space-y-3 px-8">
               <li class="flex items-start">
                 <i class="fa-solid fa-circle-check fa-2x text-green-700"></i>
-                <span class="text-xl mx-4">Chấm công linh hoạt</span>
+                <span class="text-xl mx-4 font-bold">Chấm công linh hoạt</span>
               </li>
               <li class="flex items-start">
                 <i class="fa-solid fa-circle-check fa-2x text-green-700"></i>
-                <span class="text-xl mx-4">Tính lương minh bạch – đúng luật</span>
+                <span class="text-xl mx-4 font-bold">Tính lương minh bạch – đúng luật</span>
               </li>
               <li class="flex items-start">
                 <i class="fa-solid fa-circle-check fa-2x text-green-700"></i>
-                <span class="text-xl mx-4">Xuất phiếu lương cho từng nhân viên</span>
+                <span class="text-xl mx-4 font-bold">Xuất phiếu lương cho từng nhân viên</span>
               </li>
               <li class="flex items-start">
                 <i class="fa-solid fa-circle-check fa-2x text-green-700"></i>
-                <span class="text-xl mx-4">Chi trả lương hộ qua ngân hàng</span>
+                <span class="text-xl mx-4 font-bold">Chi trả lương hộ qua ngân hàng</span>
               </li>
               <li class="flex items-start">
                 <i class="fa-solid fa-circle-check fa-2x text-green-700"></i>
-                <span class="text-xl mx-4">Quản lý phúc lợi đầy đủ</span>
+                <span class="text-xl mx-4 font-bold">Quản lý phúc lợi đầy đủ</span>
               </li>
             </ul>
             <div class="text-center text-2xl">
@@ -408,6 +402,12 @@
       </div>
     </section>
   </div>
+  <section id="cta-1" class="my-10 md:my-2 hidden md:block">
+    <h2 class="text-center flex flex-col md:flex-row items-center justify-center">
+      <span class="md:mx-4">Chúng Tôi Luôn Sẵn Sàng</span> <br />
+      <a href="/contact" class="cta-button"> Hãy Liên Hệ Ngay Hôm Nay </a>
+    </h2>
+  </section>
   <div class="space-y-24 hidden md:block">
     <!-- First Service Section - Left image, right content -->
     <section class="service-container max-w-6xl mx-auto my-12 overflow-hidden bg-white rounded-lg shadow-lg">
@@ -423,32 +423,32 @@
         <!-- Service Content Section - Center aligned text -->
         <div class="w-3/5 px-8 py-8 flex flex-col justify-center">
           <div class="max-w-lg mx-auto">
-            <h2 class="text-4xl font-bold mb-4 text-blue-600 text-center md:text-left">
+            <h2 class="text-4xl font-black mb-4 text-blue-600 text-center md:text-left">
               DV Tư Vấn Quản Lý Hồ Sơ Nhân Sự
             </h2>
-            <p class="mb-6 leading-relaxed text-2xl text-center md:text-left">
+            <p class="mb-6 leading-relaxed text-2xl text-center md:text-left font-bold">
               Gọn Gàng - Chuẩn Luật
             </p>
             <ul class="mb-8 space-y-3 px-4">
               <li class="flex items-start">
                 <i class="fa-solid fa-circle-check fa-2x text-green-700"></i>
-                <span class="text-xl mx-4">Chuẩn hóa hồ sơ từ A-Z</span>
+                <span class="text-xl mx-4 font-bold">Chuẩn hóa hồ sơ từ A-Z</span>
               </li>
               <li class="flex items-start">
                 <i class="fa-solid fa-circle-check fa-2x text-green-700"></i>
-                <span class="text-xl mx-4">Soạn thảo & theo dõi hợp đồng lao động</span>
+                <span class="text-xl mx-4 font-bold">Soạn thảo & theo dõi hợp đồng lao động</span>
               </li>
               <li class="flex items-start">
                 <i class="fa-solid fa-circle-check fa-2x text-green-700"></i>
-                <span class="text-xl mx-4">Lưu trữ hồ sơ thông minh – dễ tìm kiếm, dễ tra cứu</span>
+                <span class="text-xl mx-4 font-bold">Lưu trữ hồ sơ thông minh – dễ tìm kiếm, dễ tra cứu</span>
               </li>
               <li class="flex items-start">
                 <i class="fa-solid fa-circle-check fa-2x text-green-700"></i>
-                <span class="text-xl mx-4">Cập nhật nhanh theo luật lao động mới nhất</span>
+                <span class="text-xl font-bold mx-4">Cập nhật nhanh theo luật lao động mới nhất</span>
               </li>
               <li class="flex items-start">
                 <i class="fa-solid fa-circle-check fa-2x text-green-700"></i>
-                <span class="text-xl mx-4">Báo cáo & thống kê kịp thời</span>
+                <span class="text-xl font-bold mx-4">Báo cáo & thống kê kịp thời</span>
               </li>
             </ul>
             <div class="text-center text-2xl">
@@ -462,6 +462,34 @@
         </div>
       </div>
     </section>
+    <div class="sr-only">
+      <h2>Dịch Vụ Của Chúng Tôi</h2>
+
+      <section>
+        <h3>Dịch Vụ Tuyển Dụng</h3>
+        <p>Tuyển đúng người - vững tổ chức.</p>
+        <p>Tư vấn chiến lược nhân sự</p>
+        <p>Tư vấn Luật Lao Động, Luật BHXH</p>
+      </section>
+
+      <section>
+        <h3>DV Tính Lương và Chi Trả Hộ; Nhẹ Gánh Cho Doanh Nghiệp</h3>
+        <p>Chấm công linh hoạt</p>
+        <p>Tính lương minh bạch – đúng luật</p>
+        <p>Xuất phiếu lương cho từng nhân viên</p>
+        <p>Chi trả lương hộ qua ngân hàng</p>
+        <p>Quản lý phúc lợi đầy đủ</p>
+      </section>
+
+      <section>
+        <h3>DV Tư Vấn Quản Lý Hồ Sơ Nhân Sự; Gọn Gàng - Chuẩn Luật</h3>
+        <p>Chuẩn hóa hồ sơ từ A-Z</p>
+        <p>Soạn thảo & theo dõi hợp đồng lao động</p>
+        <p>Lưu trữ hồ sơ thông minh – dễ tìm kiếm, dễ tra cứu</p>
+        <p>Cập nhật nhanh theo luật lao động mới nhất</p>
+        <p>Báo cáo & thống kê kịp thời</p>
+      </section>
+    </div>
   </div>
 </main>
 <footer class="bg-gray-100 py-8">
