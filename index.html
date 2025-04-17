@@ -149,7 +149,7 @@
                 space-y-6 md:space-y-0 md:space-x-6 font-bold text-2xl">
         <li><a href="#" aria-current="page" @click.prevent="changeTab('home')"><i class="fa-regular fa-house fa-xl" rel="home"></i> Trang Chủ</a></li>
         <li><a href="#" @click.prevent="changeTab('about')"><i class="fa-regular fa-building fa-xl"></i> Giới Thiệu</a></li>
-        <li><a href="#"><i class="fa-regular fa-clipboard-list-check fa-xl"></i> Dịch Vụ</a></li>
+        <li><a href="#" @click.prevent="changeTab('services')"><i class="fa-regular fa-clipboard-list-check fa-xl"></i> Dịch Vụ</a></li>
         <li><a href="#"><i class="fa-regular fa-phone-volume fa-xl"></i> Liên Hệ</a></li>
       </ul>
     </div>
@@ -345,7 +345,7 @@
     </section>
   </div>
   <section id="cta" class="my-10 md:my-2" x-show="currentTab === 'home'">
-    <h2 class="text-center flex flex-col md:flex-row items-center justify-center">
+    <h2 class="text-center flex flex-col md:flex-row items-center justify-center text-2xl">
       <span class="md:mx-4">Chúng Tôi Luôn Sẵn Sàng</span> <br />
       <a href="/contact" class="cta-button"> Hãy Liên Hệ Ngay Hôm Nay </a>
     </h2>
@@ -403,7 +403,7 @@
     </section>
   </div>
   <section id="cta-1" class="my-10 md:my-2 hidden md:block" x-show="currentTab === 'home'">
-    <h2 class="text-center flex flex-col md:flex-row items-center justify-center">
+    <h2 class="text-center flex flex-col md:flex-row items-center justify-center text-2xl">
       <span class="md:mx-4">Chúng Tôi Luôn Sẵn Sàng</span> <br />
       <a href="/contact" class="cta-button"> Hãy Liên Hệ Ngay Hôm Nay </a>
     </h2>
@@ -504,7 +504,9 @@
     <section class="hero p-6">
       <div class="max-w-4xl mx-auto flex flex-col items-center justify-center text-center">
         <h1 class="flex flex-col items-center justify-center">
-          <span class="inline-block font-black text-4xl mb-5 sm:mb-10 sm:text-6xl">Giới Thiệu Work Well</span>
+          <span class="inline-block font-black text-4xl sm:text-6xl">
+            Giới Thiệu Work Well
+          </span>
         </h1>
       </div>
     </section>
@@ -515,6 +517,9 @@
       <p class="mb-5">Với phương châm 'Grow Strong – Cùng Nhau Lớn Mạnh', Work Well đồng hành cùng doanh nghiệp trong việc xây dựng
       đội ngũ phù hợp và phát triển tổ chức bền vững.</p>
     </div>
+  </div>
+  <div class="mx-auto" x-show="currentTab === 'services'">
+
   </div>
 </main>
 <footer class="bg-gray-100 py-8">
