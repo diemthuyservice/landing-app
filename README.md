@@ -89,15 +89,25 @@ netlify deploy --prod --dir=dist
 
 # Color Palette
 Usage	Hex Code	Sample	Notes
+
 Page Background	#ffffff / #f7f9fa		Clean and light, keeps design spacious and readable
+
 Body Text	#2e2e2e		Deep gray for high readability on light background
+
 Headings	#045fa2		Strong deep blue; establishes trust and structure
+
 Hero Background	#1aa3a7		Bright, optimistic teal — adds vibrance
+
 Hero Text	#ffffff		White on teal ensures high contrast
+
 Primary CTA Button	#045fa2		Deep blue for strong call-to-action
+
 CTA Hover	#0460a3		Slight variation adds feedback without clashing
+
 Links / Accent Items	#1aa4a7		Teal as a secondary action or detail element
+
 Section Background (Alt)	#f7f9fa		Light neutral to break up sections
+
 Border / Divider	#045fa3		Optional darker blue for thin separators or icons
 
 # Illustration Ideas
