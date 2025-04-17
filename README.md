@@ -100,4 +100,25 @@ Links / Accent Items	#1aa4a7		Teal as a secondary action or detail element
 Section Background (Alt)	#f7f9fa		Light neutral to break up sections
 Border / Divider	#045fa3		Optional darker blue for thin separators or icons
 
+# Illustration Ideas
 
+Section, Suggested Keywords
+
+Hero, teamwork, consulting, office, business meeting, HR services, teamwork, consultation, business growth
+
+Services, onboarding, payroll, resume, job interview, compliance, interview, hiring, payroll, onboarding, compliance
+
+Why Choose Us, business growth, success, partnership, collaboration, teamwork, business growth, partnership, collaboration, trust, success, partnership, expertise, performance
+
+Testimonials, conversation, review, client, feedback, feedback, review, support, happy clients
+
+Contact/About, customer support, handshake, business communication, conversation, reach out, email support, business communication
+
+
+# Vector Arts Libraries
+
+* [unDraw](https://undraw.co/): A constantly updated collection of beautiful svg images that you can use completely free and without attribution. You can use them in your marketing, business presentations, educational materials, websites, and anywhere else you need illustrations.
+* [storyset](https://storyset.com/illustration/asian-family/rafiki)
+* [Manypixels](https://www.manypixels.co/gallery)
+* [drawkit](https://www.drawkit.com/illustration-types/2d?page=3)
+* [svgrepo](https://www.svgrepo.com)
