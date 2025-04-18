@@ -168,6 +168,106 @@
   </div>
 </section>
 <main>
+  <!-- Service Packages Section -->
+  <section class="py-12 bg-gray-100" x-show="currentTab === 'home'">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-4xl md:text-6xl font-black text-center mb-12">Gói Dịch Vụ Của Chúng Tôi</h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+        <!-- Basic Package -->
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform hover:scale-105 flex flex-col h-full">
+          <div class="bg-blue-500 py-4">
+            <h3 class="text-2xl font-bold text-white text-center">Gói TUYỂN DỤNG MINI</h3>
+          </div>
+          <div class="p-6 flex flex-col flex-grow">
+            <ul class="space-y-3 mb-8 flex-grow">
+              <li class="flex items-start">
+                <i class="fa-solid fa-circle-check text-green-600 mt-1 mr-2"></i>
+                <span class="text-lg">Tư vấn chân dung ứng viên phù hợp</span>
+              </li>
+              <li class="flex items-start">
+                <i class="fa-solid fa-circle-check text-green-600 mt-1 mr-2"></i>
+                <span class="text-lg">Sàng lọc và sơ vấn ứng viên</span>
+              </li>
+              <li class="flex items-start">
+                <i class="fa-solid fa-circle-check text-green-600 mt-1 mr-2"></i>
+                <span class="text-lg">Đồng hành cùng doanh nghiệp tuyển chọn ứng viên phù hợp</span>
+              </li>
+              <li class="flex items-start">
+                <i class="fa-solid fa-circle-check text-green-600 mt-1 mr-2"></i>
+                <span class="text-lg">Hỗ trợ soạn/ gởi Thư mời nhận việc.</span>
+              </li>
+            </ul>
+            <div class="text-center mt-auto">
+              <a href="/" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-full inline-block transition-colors">
+                Liên Hệ Ngay
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Standard Package -->
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden transform scale-105 border-2 border-blue-500 flex flex-col h-full">
+          <div class="bg-blue-600 py-4 relative">
+        <span class="absolute top-0 right-0 bg-yellow-400 text-blue-800 font-bold px-4 py-1 rounded-bl-lg">
+          Phổ biến
+        </span>
+            <h3 class="text-2xl font-bold text-white text-center">Gói HR MINI</h3>
+          </div>
+          <div class="p-6 flex flex-col flex-grow">
+            <ul class="space-y-3 mb-8 flex-grow">
+              <li class="flex items-start">
+                <i class="fa-solid fa-circle-check text-green-600 mt-1 mr-2"></i>
+                <span class="text-lg">Xây dựng hồ sơ nhân sự, HĐLĐ, nội quy cty</span>
+              </li>
+              <li class="flex items-start">
+                <i class="fa-solid fa-circle-check text-green-600 mt-1 mr-2"></i>
+                <span class="text-lg">Các Quyết định: bổ nhiệm, kỷ luật, nghỉ việc …</span>
+              </li>
+              <li class="flex items-start">
+                <i class="fa-solid fa-circle-check text-green-600 mt-1 mr-2"></i>
+                <span class="text-lg">Chấm công, tính lương (đơn giản)</span>
+              </li>
+            </ul>
+            <div class="text-center mt-auto">
+              <a href="/" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-full inline-block transition-colors">
+                Đăng Ký Ngay
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Premium Package -->
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform hover:scale-105 flex flex-col h-full">
+          <div class="bg-gradient-to-r from-blue-500 to-purple-600 py-4">
+            <h3 class="text-2xl font-bold text-white text-center">Gói HR HÀNG THÁNG</h3>
+          </div>
+          <div class="p-6 flex flex-col flex-grow">
+            <ul class="space-y-3 mb-8 flex-grow">
+              <li class="flex items-start">
+                <i class="fa-solid fa-circle-check text-green-600 mt-1 mr-2"></i>
+                <span class="text-lg">Các văn bản đi (thông báo, công văn)</span>
+              </li>
+              <li class="flex items-start">
+                <i class="fa-solid fa-circle-check text-green-600 mt-1 mr-2"></i>
+                <span class="text-lg">Thủ tục BHXH: báo tăng, giảm, hưởng các chế độ …</span>
+              </li>
+              <li class="flex items-start">
+                <i class="fa-solid fa-circle-check text-green-600 mt-1 mr-2"></i>
+                <span class="text-lg">Tổng hợp ngày công, tính lương và chi lương hộ hàng tháng.</span>
+              </li>
+            </ul>
+            <div class="text-center mt-auto">
+              <a href="/" class="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white font-bold py-3 px-6 rounded-full inline-block transition-colors">
+                Nâng Cấp Ngay
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
   <!-- Mobile layout -->
   <div class="max-w-4xl mx-auto mt-20" x-show="currentTab === 'home'">
     <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold mb-8 text-center">Dịch Vụ Của Chúng Tôi</h1>
@@ -307,10 +407,10 @@
         <!-- Service Image Section - Fixed width -->
         <div class="w-2/5 bg-gray-50 flex items-center justify-center p-8">
           <div class="w-64 h-64 rounded-full flex items-center justify-center">
+            <img src="/undraw_interview_yz52.svg" alt="Dịch vụ tuyển dụng nhân sự"
+                 loading="lazy" decoding="async">
             <span class="text-8xl text-white">
 <!--              <i class="fa-regular fa-users-rays"></i>-->
-              <img src="/undraw_interview_yz52.svg" alt="Dịch vụ tuyển dụng nhân sự"
-                   width="800" height="600" loading="lazy" decoding="async">
             </span>
           </div>
         </div>
@@ -396,10 +496,10 @@
         <!-- Service Image Section -->
         <div class="w-2/5 bg-gray-50 flex items-center justify-center p-8">
           <div class="w-64 h-64 rounded-full flex items-center justify-center">
+            <img src="/undraw_printing-invoices_osgs.svg" alt="Dịch vụ tính lương và chi trả hộ"
+                 loading="lazy" decoding="async">
             <span class="text-8xl text-white">
 <!--              <i class="fa-regular fa-money-check-dollar-pen"></i>-->
-              <img src="/undraw_printing-invoices_osgs.svg" alt="Dịch vụ tính lương và chi trả hộ"
-                   width="800" height="600" loading="lazy" decoding="async">
             </span>
           </div>
         </div>
@@ -422,7 +522,7 @@
             <span class="text-8xl text-white">
 <!--              <i class="fa-regular fa-folder-user"></i>-->
               <img src="/undraw_team_85hs.svg" alt="Dịch vụ tư vấn quản lý hồ sơ nhân sự"
-                   width="800" height="600" loading="lazy" decoding="async">
+                   loading="lazy" decoding="async">
             </span>
           </div>
         </div>
@@ -525,7 +625,6 @@
     </div>
   </div>
   <div class="mx-auto" x-show="currentTab === 'services'">
-
   </div>
 </main>
 <footer class="bg-gray-100 py-8">
