@@ -38,7 +38,7 @@ jobs:
       # Add this new step to create the _redirects file
       - name: Create _redirects file
         run: |
-          echo "/* https://47l5zkm2.up.railway.app/:splat 301!" > ./dist/_redirects
+          echo "/* https://www.work-well.net/:splat 301!" > ./dist/_redirects
           cat ./dist/_redirects  # Print for verification in workflow logs
 
       - name: Deploy to Netlify
